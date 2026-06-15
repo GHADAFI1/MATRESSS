@@ -6,431 +6,990 @@
 var products = [
 
     // ========== MATTRESSES ==========
+
+    // ----- Standard Mattresses (Open / TE / Quoted) -----
     {
         id: 'm001',
-        name: 'Premium Orthopedic Mattress - 6x6ft',
-        description: 'High-density foam orthopedic mattress designed for optimal spinal alignment and pressure relief. Provides excellent support for back pain relief. Features a breathable, hypoallergenic cover.',
-        price: 450000,
-        originalPrice: 550000,
+        name: 'Vita foam Mattress - 3x3ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 70000,
+        originalPrice: 81000,
         category: 'mattresses',
-        images: ['a.jpg', ],
+        images: ['vita foam.jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'High-density memory foam' },
-            { name: 'Thickness', value: '8 inches' },
-            { name: 'Warranty', value: '5 years' }
+            { name: 'Size', value: '3x3ft (90x90cm)' },
+            { name: 'Type', value: 'Standard - Open' }
         ]
     },
     {
         id: 'm002',
-        name: 'Luxury Pocket Spring Mattress - 6x6ft',
-        description: 'Luxury pocket spring mattress with individually wrapped coils for motion isolation and targeted support. Topped with cooling gel memory foam for ultimate comfort.',
-        price: 650000,
-        originalPrice: 780000,
+        name: 'Vita foam Mattress - 3x3ft (TE)',
+        description: 'Standard TE mattress for enhanced support.',
+        price: 81000,
+        originalPrice: 100000,
         category: 'mattresses',
-        images: ['b.jpg', 'c.jpg', 'd.jpg'],
+        images: ['3 (1).jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Pocket springs + gel memory foam' },
-            { name: 'Thickness', value: '10 inches' },
-            { name: 'Warranty', value: '7 years' }
+            { name: 'Size', value: '3x3ft (90x90cm)' },
+            { name: 'Type', value: 'Standard - TE' }
         ]
     },
     {
         id: 'm003',
-        name: 'Economy Foam Mattress - 5x6ft',
-        description: 'Comfortable and affordable foam mattress perfect for guest rooms or budget-conscious buyers. Medium-firm feel with good support.',
-        price: 250000,
-        originalPrice: 320000,
+        name: 'Vita foam Mattress - 3x4ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 80000,
+        originalPrice: 96000,
         category: 'mattresses',
-        images: ['e.jpg', 'f.jpg'],
+        images: ['3 (2).jpeg'],
         specifications: [
-            { name: 'Size', value: '5x6ft (150x180cm)' },
-            { name: 'Material', value: 'High-resilience foam' },
-            { name: 'Thickness', value: '6 inches' },
-            { name: 'Warranty', value: '2 years' }
+            { name: 'Size', value: '3x4ft (90x120cm)' },
+            { name: 'Type', value: 'Standard - Open' }
         ]
     },
     {
         id: 'm004',
-        name: 'King Size Orthopedic Mattress - 7x6ft',
-        description: 'Premium orthopedic mattress for king-size beds. Extra thickness and support for superior comfort and pressure relief.',
-        price: 680000,
-        originalPrice: 850000,
+        name: 'Vita foam Mattress - 3x4ft (TE)',
+        description: 'Standard TE mattress for enhanced support.',
+        price: 96000,
+        originalPrice: 115000,
         category: 'mattresses',
-        images: ['c.jpg'],
+        images: ['vita foam.jpeg'],
         specifications: [
-            { name: 'Size', value: '7x6ft (210x180cm)' },
-            { name: 'Material', value: 'Memory foam + support core' },
-            { name: 'Thickness', value: '10 inches' },
-            { name: 'Warranty', value: '5 years' }
+            { name: 'Size', value: '3x4ft (90x120cm)' },
+            { name: 'Type', value: 'Standard - TE' }
         ]
     },
-    /*{
+    {
         id: 'm005',
-        name: 'Bamboo Charcoal Memory Foam Mattress - 6x6ft',
-        description: 'Infused with bamboo charcoal for natural odor control and moisture wicking. Provides cool, comfortable sleep with excellent pressure relief.',
-        price: 520000,
-        originalPrice: 620000,
+        name: 'Vita foam Mattress - 3x6ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 130000,
+        originalPrice: 155000,
         category: 'mattresses',
-        images: ['mattress-bamboo-1.jpg', 'mattress-bamboo-2.jpg'],
+        images: ['3 (1).jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Bamboo charcoal memory foam' },
-            { name: 'Thickness', value: '8 inches' },
-            { name: 'Warranty', value: '5 years' }
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Standard - Open' }
         ]
     },
     {
         id: 'm006',
-        name: 'Baby Crib Mattress - 4x2ft',
-        description: 'Firm, safe mattress for baby cribs. Made with hypoallergenic materials and a waterproof cover for easy cleaning.',
-        price: 85000,
-        originalPrice: 110000,
+        name: 'Vita foam Mattress - 3x6ft (TE)',
+        description: 'Standard TE mattress for enhanced support.',
+        price: 140000,
+        originalPrice: 195000,
         category: 'mattresses',
-        images: ['crib-mattress-1.jpg', 'crib-mattress-2.jpg'],
+        images: ['3 (2).jpeg'],
         specifications: [
-            { name: 'Size', value: '4x2ft (120x60cm)' },
-            { name: 'Material', value: 'Firm foam + waterproof cover' },
-            { name: 'Thickness', value: '4 inches' },
-            { name: 'Safety', value: 'Non-toxic, hypoallergenic' }
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Standard - TE' }
         ]
     },
     {
         id: 'm007',
-        name: 'Double Sided Mattress - 5x6ft',
-        description: 'Reversible mattress with medium-firm on one side and soft on the other. Extends mattress life with flip-able design.',
-        price: 380000,
-        originalPrice: 470000,
+        name: 'Vita foam Mattress - 4x6ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 170000,
+        originalPrice: 200000,
         category: 'mattresses',
-        images: ['mattress-double-sided-1.jpg', 'mattress-double-sided-2.jpg'],
+        images: ['vita foam.jpeg'],
         specifications: [
-            { name: 'Size', value: '5x6ft (150x180cm)' },
-            { name: 'Material', value: 'High-density foam' },
-            { name: 'Thickness', value: '7 inches' },
-            { name: 'Warranty', value: '3 years' }
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Type', value: 'Standard - Open' }
         ]
     },
     {
         id: 'm008',
-        name: 'Latex Mattress - 6x6ft',
-        description: 'Natural latex mattress offering exceptional durability, breathability, and hypoallergenic properties. Perfect for allergy sufferers.',
-        price: 750000,
-        originalPrice: 900000,
+        name: 'Vita foam Mattress - 4x6ft (TE)',
+        description: 'Standard TE mattress for enhanced support.',
+        price: 175000,
+        originalPrice: 210000,
         category: 'mattresses',
-        images: ['mattress-latex-1.jpg', 'mattress-latex-2.jpg', 'mattress-latex-3.jpg'],
+        images: ['3 (1).jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Natural latex' },
-            { name: 'Thickness', value: '9 inches' },
-            { name: 'Warranty', value: '10 years' }
-        ]
-    },
-
-    // ========== BEDSHEETS ==========
-    {
-        id: 'b001',
-        name: 'Egyptian Cotton Bedsheet Set - 6x6ft',
-        description: 'Luxurious 100% Egyptian cotton bedsheet set. Soft, breathable, and durable. Set includes 1 fitted sheet, 1 flat sheet, and 2 pillowcases.',
-        price: 120000,
-        originalPrice: 160000,
-        category: 'bedsheets',
-        images: ['bedsheet-egyptian-1.jpg', 'bedsheet-egyptian-2.jpg', 'bedsheet-egyptian-3.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: '100% Egyptian cotton' },
-            { name: 'Thread Count', value: '400' },
-            { name: 'Pieces', value: '4 pieces (1 fitted, 1 flat, 2 pillowcases)' }
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Type', value: 'Standard - TE' }
         ]
     },
     {
-        id: 'b002',
-        name: 'Microfiber Bedsheet Set - 6x6ft - Navy Blue',
-        description: 'Wrinkle-resistant, fade-resistant microfiber bedsheet set. Soft, comfortable, and easy to care for. Set includes 1 fitted sheet, 1 flat sheet, and 2 pillowcases.',
-        price: 75000,
-        originalPrice: 100000,
-        category: 'bedsheets',
-        images: ['bedsheet-microfiber-navy-1.jpg', 'bedsheet-microfiber-navy-2.jpg'],
+        id: 'm009',
+        name: 'Vita foam Mattress - 4x8ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 260000,
+        originalPrice: 310000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Microfiber polyester' },
-            { name: 'Color', value: 'Navy Blue' },
-            { name: 'Pieces', value: '4 pieces' }
+            { name: 'Size', value: '4x8ft (120x240cm)' },
+            { name: 'Type', value: 'Standard - Open' }
         ]
     },
     {
-        id: 'b003',
-        name: 'Microfiber Bedsheet Set - 6x6ft - Burgundy',
-        description: 'Wrinkle-resistant, fade-resistant microfiber bedsheet set. Soft, comfortable, and easy to care for. Set includes 1 fitted sheet, 1 flat sheet, and 2 pillowcases.',
-        price: 75000,
-        originalPrice: 100000,
-        category: 'bedsheets',
-        images: ['bedsheet-microfiber-burgundy-1.jpg', 'bedsheet-microfiber-burgundy-2.jpg'],
+        id: 'm010',
+        name: 'Vita foam Mattress - 4x8ft (TE)',
+        description: 'Standard TE mattress for enhanced support.',
+        price: 265000,
+        originalPrice: 315000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Microfiber polyester' },
-            { name: 'Color', value: 'Burgundy' },
-            { name: 'Pieces', value: '4 pieces' }
+            { name: 'Size', value: '4x8ft (120x240cm)' },
+            { name: 'Type', value: 'Standard - TE' }
         ]
     },
     {
-        id: 'b004',
-        name: 'Microfiber Bedsheet Set - 5x6ft - Grey',
-        description: 'Wrinkle-resistant, fade-resistant microfiber bedsheet set. Soft, comfortable, and easy to care for. Set includes 1 fitted sheet, 1 flat sheet, and 2 pillowcases.',
-        price: 65000,
-        originalPrice: 85000,
-        category: 'bedsheets',
-        images: ['bedsheet-microfiber-grey-1.jpg', 'bedsheet-microfiber-grey-2.jpg'],
+        id: 'm011',
+        name: 'Vita foam Mattress - 5x6ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 220000,
+        originalPrice: 265000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
         specifications: [
             { name: 'Size', value: '5x6ft (150x180cm)' },
-            { name: 'Material', value: 'Microfiber polyester' },
-            { name: 'Color', value: 'Grey' },
-            { name: 'Pieces', value: '4 pieces' }
+            { name: 'Type', value: 'Standard - Open' }
         ]
     },
     {
-        id: 'b005',
-        name: 'Striped Cotton Bedsheet Set - 6x6ft',
-        description: 'Elegant striped design bedsheet set made from premium cotton. Breathable and comfortable for year-round use.',
-        price: 95000,
-        originalPrice: 130000,
-        category: 'bedsheets',
-        images: ['bedsheet-striped-1.jpg', 'bedsheet-striped-2.jpg', 'bedsheet-striped-3.jpg'],
+        id: 'm012',
+        name: 'Vita foam Mattress - 5x6ft (TE)',
+        description: 'Standard TE mattress for enhanced support.',
+        price: 235000,
+        originalPrice: 280000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Type', value: 'Standard - TE' }
+        ]
+    },
+    {
+        id: 'm013',
+        name: 'Vita foam Mattress - 5x8ft (Open)',
+        description: 'Standard open-cell mattress for basic comfort and support.',
+        price: 310000,
+        originalPrice: 370000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x8ft (150x240cm)' },
+            { name: 'Type', value: 'Standard - Open' }
+        ]
+    },
+    {
+        id: 'm014',
+        name: 'Vita foam Mattress - 5x8ft (TE)',
+        description: 'Vita foam TE mattress for enhanced support.',
+        price: 325000,
+        originalPrice: 390000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x8ft (150x240cm)' },
+            { name: 'Type', value: 'Standard - TE' }
+        ]
+    },
+    {
+        id: 'm015',
+        name: 'Vita foam Mattress - 6x6ft (Open)',
+        description: 'Vita foam open-cell mattress for basic comfort and support.',
+        price: 270000,
+        originalPrice: 325000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
         specifications: [
             { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Premium cotton' },
-            { name: 'Design', value: 'Striped pattern' },
-            { name: 'Pieces', value: '4 pieces' }
+            { name: 'Type', value: 'Vita foam - Open' }
         ]
     },
     {
-        id: 'b006',
-        name: 'Flannel Bedsheet Set - 6x6ft - Winter Warm',
-        description: 'Warm and cozy flannel bedsheet set perfect for cold nights. Soft brushed fabric for extra comfort.',
-        price: 110000,
-        originalPrice: 145000,
-        category: 'bedsheets',
-        images: ['bedsheet-flannel-1.jpg', 'bedsheet-flannel-2.jpg'],
+        id: 'm016',
+        name: 'Vita foam Mattress - 6x6ft (TE)',
+        description: 'Vita foam TE mattress for enhanced support.',
+        price: 280000,
+        originalPrice: 335000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
         specifications: [
             { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Flannel cotton' },
-            { name: 'Season', value: 'Winter' },
-            { name: 'Pieces', value: '4 pieces' }
+            { name: 'Type', value: 'Vita foam - TE' }
         ]
     },
     {
-        id: 'b007',
-        name: 'Satin Bedsheet Set - Queen Size',
-        description: 'Luxurious satin bedsheet set that adds elegance to any bedroom. Smooth, shiny, and gentle on hair and skin.',
-        price: 135000,
-        originalPrice: 180000,
-        category: 'bedsheets',
-        images: ['bedsheet-satin-1.jpg', 'bedsheet-satin-2.jpg'],
+        id: 'm017',
+        name: 'Vita foam Mattress - 6x8ft (Open)',
+        description: 'Vita foam open-cell mattress for basic comfort and support.',
+        price: 350000,
+        originalPrice: 420000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
         specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Satin polyester' },
-            { name: 'Feel', value: 'Smooth and silky' },
-            { name: 'Pieces', value: '4 pieces' }
+            { name: 'Size', value: '6x8ft (180x240cm)' },
+            { name: 'Type', value: 'Vita foam - Open' }
         ]
     },
     {
-        id: 'b008',
-        name: 'Kids Cartoon Bedsheet Set - 4x6ft',
-        description: 'Fun and colorful cartoon-themed bedsheet set for children. Made from soft, durable cotton blend.',
-        price: 55000,
-        originalPrice: 75000,
-        category: 'bedsheets',
-        images: ['bedsheet-kids-1.jpg', 'bedsheet-kids-2.jpg'],
+        id: 'm018',
+        name: 'Vita foam Mattress - 6x8ft (TE)',
+        description: 'Vita foam TE mattress for enhanced support.',
+        price: 355000,
+        originalPrice: 425000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x8ft (180x240cm)' },
+            { name: 'Type', value: 'Vita foam - TE' }
+        ]
+    },
+
+    // ----- High Density (Gold) Mattresses -----
+    {
+        id: 'm019',
+        name: 'Vita foam High Density Gold Mattress - 3x4ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 170000,
+        originalPrice: 205000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x4ft (90x120cm)' },
+            { name: 'Type', value: 'Vita foam - Open' }
+        ]
+    },
+    {
+        id: 'm020',
+        name: 'Vita foam High Density Gold Mattress - 3x4ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 180000,
+        originalPrice: 240000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x4ft (90x120cm)' },
+            { name: 'Type', value: 'Vita foam - TE' }
+        ]
+    },
+    {
+        id: 'm021',
+        name: 'Vita foam High Density Gold Mattress - 3x6ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 205000,
+        originalPrice: 260000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm022',
+        name: 'Vita foam High Density Gold Mattress - 3x6ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 215000,
+        originalPrice: 275000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm023',
+        name: 'Vita foam High Density Gold Mattress - 4x6ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 265000,
+        originalPrice: 335000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
         specifications: [
             { name: 'Size', value: '4x6ft (120x180cm)' },
-            { name: 'Material', value: 'Cotton blend' },
-            { name: 'Design', value: 'Cartoon characters' },
-            { name: 'Pieces', value: '3 pieces' }
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
         ]
     },
     {
-        id: 'b009',
-        name: 'Oxford Pillowcase Pair - Standard Size',
-        description: 'High-quality Oxford pillowcases with elegant border design. Soft, breathable, and durable.',
-        price: 35000,
-        originalPrice: 50000,
-        category: 'bedsheets',
-        images: ['pillowcase-oxford-1.jpg', 'pillowcase-oxford-2.jpg'],
+        id: 'm024',
+        name: 'Vita foam High Density Gold Mattress - 4x6ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 280000,
+        originalPrice: 350000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
         specifications: [
-            { name: 'Size', value: 'Standard (50x70cm)' },
-            { name: 'Material', value: 'Premium cotton' },
-            { name: 'Design', value: 'Oxford border' },
-            { name: 'Quantity', value: '2 pillowcases' }
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
         ]
     },
     {
-        id: 'b010',
-        name: 'Waterproof Mattress Protector - 6x6ft',
-        description: 'Breathable waterproof mattress protector that guards against spills, stains, and allergens. Machine washable.',
+        id: 'm025',
+        name: 'Vita foam High Density Gold Mattress - 4x8ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 390000,
+        originalPrice: 490000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x8ft (120x240cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm026',
+        name: 'Vita foam High Density Gold Mattress - 4x8ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 410000,
+        originalPrice: 515000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x8ft (120x240cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm027',
+        name: 'Vita foam High Density Gold Mattress - 4x10ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 480000,
+        originalPrice: 600000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x10ft (120x300cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm028',
+        name: 'Vita foam High Density Gold Mattress - 4x10ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 600000,
+        originalPrice: 720000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x10ft (120x300cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm029',
+        name: 'Vita foam High Density Gold Mattress - 4x12ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 570000,
+        originalPrice: 710000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x12ft (120x360cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm030',
+        name: 'Vita foam High Density Gold Mattress - 4x12ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 585000,
+        originalPrice: 730000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x12ft (120x360cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm031',
+        name: 'Vita foam High Density Gold Mattress - 5x6ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 325000,
+        originalPrice: 410000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm032',
+        name: 'Vita foam High Density Gold Mattress - 5x6ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 340000,
+        originalPrice: 430000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm033',
+        name: 'Vita foam High Density Gold Mattress - 5x8ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 410000,
+        originalPrice: 520000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x8ft (150x240cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm034',
+        name: 'Vita foam High Density Gold Mattress - 5x8ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 485000,
+        originalPrice: 610000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x8ft (150x240cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm035',
+        name: 'Vita foam High Density Gold Mattress - 5x10ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 585000,
+        originalPrice: 700000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x10ft (150x300cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm036',
+        name: 'Vita foam High Density Gold Mattress - 5x10ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 585000,
+        originalPrice: 720000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x10ft (150x300cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm037',
+        name: 'Vita foam High Density Gold Mattress - 5x12ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 658000,
+        originalPrice: 800000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x12ft (150x360cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm038',
+        name: 'Vita foam High Density Gold Mattress - 5x12ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 645000,
+        originalPrice: 820000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x12ft (150x360cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm039',
+        name: 'Vita foam High Density Gold Mattress - 6x6ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 435000,
+        originalPrice: 550000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x6ft (180x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm040',
+        name: 'Vita foam High Density Gold Mattress - 6x6ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 455000,
+        originalPrice: 570000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x6ft (180x180cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm041',
+        name: 'Vita foam High Density Gold Mattress - 6x8ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 537000,
+        originalPrice: 670000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x8ft (180x240cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm042',
+        name: 'Vita foam High Density Gold Mattress - 6x8ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 535000,
+        originalPrice: 690000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x8ft (180x240cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm043',
+        name: 'Vita foam High Density Gold Mattress - 6x10ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 665000,
+        originalPrice: 830000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x10ft (180x300cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm044',
+        name: 'Vita foam High Density Gold Mattress - 6x10ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 675000,
+        originalPrice: 850000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x10ft (180x300cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+    {
+        id: 'm045',
+        name: 'Vita foam High Density Gold Mattress - 6x12ft (Open)',
+        description: 'Vita foam high density gold mattress for superior support and durability.',
+        price: 775000,
+        originalPrice: 970000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x12ft (180x360cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - Open' }
+        ]
+    },
+    {
+        id: 'm046',
+        name: 'Vita foam High Density Gold Mattress - 6x12ft (TE)',
+        description: 'Vita foam high density gold TE mattress for enhanced comfort.',
+        price: 788000,
+        originalPrice: 990000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x12ft (180x360cm)' },
+            { name: 'Type', value: 'Vita foam High Density Gold - TE' }
+        ]
+    },
+
+    // ----- Orthopedic Mattresses -----
+    {
+        id: 'm047',
+        name: 'Vita foam Orthopedic Mattress - 3x6ft (Open)',
+        description: 'Vita foam orthopedic mattress designed for spinal alignment and pressure relief.',
+        price: 670000,
+        originalPrice: 800000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm048',
+        name: 'Vita foam Orthopedic Mattress - 3x6ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 56800,
+        originalPrice: 78000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm049',
+        name: 'Vita foam Orthopedic Mattress - 3x6ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
         price: 65000,
         originalPrice: 85000,
-        category: 'bedsheets',
-        images: ['mattress-protector-1.jpg', 'mattress-protector-2.jpg'],
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '3x6ft (90x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
+        ]
+    },
+    {
+        id: 'm050',
+        name: 'Vita foam Orthopedic Mattress - 4x6ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 66500,
+        originalPrice: 88000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm051',
+        name: 'Vita foam Orthopedic Mattress - 4x6ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 75000,
+        originalPrice: 95000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
+        ]
+    },
+    {
+        id: 'm052',
+        name: 'Vita foam Orthopedic Mattress - 5x6ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 80000,
+        originalPrice: 105000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm053',
+        name: 'Vita foam Orthopedic Mattress - 5x6ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 90000,
+        originalPrice: 115000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
+        ]
+    },
+    {
+        id: 'm054',
+        name: 'Vita foam Orthopedic Mattress - 5x8ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1200000,
+        originalPrice: 1500000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x8ft (150x240cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm055',
+        name: 'Vita foam Orthopedic Mattress - 5x8ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1400000,
+        originalPrice: 1700000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x8ft (150x240cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
+        ]
+    },
+    {
+        id: 'm056',
+        name: 'Vita foam Orthopedic Mattress - 5x10ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1600000,
+        originalPrice: 2000000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x10ft (150x300cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm057',
+        name: 'Vita foam Orthopedic Mattress - 5x10ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1800000,
+        originalPrice: 2200000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x10ft (150x300cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
+        ]
+    },
+    {
+        id: 'm058',
+        name: 'Vita foam Orthopedic Mattress - 6x6ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 95000,
+        originalPrice: 125000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
         specifications: [
             { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Cotton top + TPU backing' },
-            { name: 'Feature', value: 'Waterproof and breathable' },
-            { name: 'Care', value: 'Machine washable' }
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm059',
+        name: 'Vita foam Orthopedic Mattress - 6x6ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1100000,
+        originalPrice: 1350000,
+        category: 'mattresses',
+        images: ['3 (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x6ft (180x180cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
+        ]
+    },
+    {
+        id: 'm060',
+        name: 'Vita foam Orthopedic Mattress - 6x8ft (Open)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1500000,
+        originalPrice: 1850000,
+        category: 'mattresses',
+        images: ['vita foam.jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x8ft (180x240cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - Open' }
+        ]
+    },
+    {
+        id: 'm061',
+        name: 'Vita foam Orthopedic Mattress - 6x8ft (T Qualified)',
+        description: 'Specialized orthopedic mattress for clinic/hospital use.',
+        price: 1650000,
+        originalPrice: 2000000,
+        category: 'mattresses',
+        images: ['3 (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x8ft (180x240cm)' },
+            { name: 'Type', value: 'Vita foam Orthopedic - T Qualified' }
         ]
     },
 
-    // ========== DUVETS & BEDCOVERS ==========
+    // ===== FIBER MATTRESSES (Super Deals) =====
+    // 4x6
     {
-        id: 'd001',
-        name: 'Velvet Duvet Set - 6x6ft - Maroon',
-        description: 'Luxurious velvet duvet set that adds warmth and elegance to your bedroom. Set includes 1 duvet cover, 1 bedsheet, and 2 pillowcases.',
-        price: 165000,
-        originalPrice: 200000,
-        category: 'duvets',
-        images: ['duvet-velvet-maroon-1.jpg', 'duvet-velvet-maroon-2.jpg', 'duvet-velvet-maroon-3.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Velvet' },
-            { name: 'Color', value: 'Maroon' },
-            { name: 'Pieces', value: '4 pieces' }
-        ]
-    },
-    {
-        id: 'd002',
-        name: 'Velvet Duvet Set - 6x6ft - Royal Blue',
-        description: 'Luxurious velvet duvet set that adds warmth and elegance to your bedroom. Set includes 1 duvet cover, 1 bedsheet, and 2 pillowcases.',
-        price: 165000,
-        originalPrice: 200000,
-        category: 'duvets',
-        images: ['duvet-velvet-blue-1.jpg', 'duvet-velvet-blue-2.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Velvet' },
-            { name: 'Color', value: 'Royal Blue' },
-            { name: 'Pieces', value: '4 pieces' }
-        ]
-    },
-    {
-        id: 'd003',
-        name: 'Fluffy Faux Fur Duvet Set - 6x6ft - White',
-        description: 'Ultra-soft faux fur duvet set for a cozy, luxurious feel. Perfect for cold weather. Set includes 1 duvet cover, 1 bedsheet, and 2 pillowcases.',
-        price: 185000,
-        originalPrice: 230000,
-        category: 'duvets',
-        images: ['duvet-faux-fur-white-1.jpg', 'duvet-faux-fur-white-2.jpg', 'duvet-faux-fur-white-3.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Faux fur' },
-            { name: 'Color', value: 'White' },
-            { name: 'Pieces', value: '4 pieces' }
-        ]
-    },
-    {
-        id: 'd004',
-        name: 'Fluffy Faux Fur Duvet Set - 6x6ft - Grey',
-        description: 'Ultra-soft faux fur duvet set for a cozy, luxurious feel. Perfect for cold weather. Set includes 1 duvet cover, 1 bedsheet, and 2 pillowcases.',
-        price: 185000,
-        originalPrice: 230000,
-        category: 'duvets',
-        images: ['duvet-faux-fur-grey-1.jpg', 'duvet-faux-fur-grey-2.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Faux fur' },
-            { name: 'Color', value: 'Grey' },
-            { name: 'Pieces', value: '4 pieces' }
-        ]
-    },
-    {
-        id: 'd005',
-        name: 'Quilted Bedspread - 6x6ft - Cream',
-        description: 'Elegant quilted bedspread with classic design. Lightweight yet warm, perfect for year-round use.',
-        price: 145000,
-        originalPrice: 180000,
-        category: 'duvets',
-        images: ['bedspread-quilted-cream-1.jpg', 'bedspread-quilted-cream-2.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Cotton blend with polyfill' },
-            { name: 'Color', value: 'Cream' },
-            { name: 'Type', value: 'Quilted bedspread' }
-        ]
-    },
-    {
-        id: 'd006',
-        name: 'Quilted Bedspread - 6x6ft - Sage Green',
-        description: 'Elegant quilted bedspread with classic design. Lightweight yet warm, perfect for year-round use.',
-        price: 145000,
-        originalPrice: 180000,
-        category: 'duvets',
-        images: ['bedspread-quilted-green-1.jpg', 'bedspread-quilted-green-2.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Cotton blend with polyfill' },
-            { name: 'Color', value: 'Sage Green' },
-            { name: 'Type', value: 'Quilted bedspread' }
-        ]
-    },
-    {
-        id: 'd007',
-        name: 'Woolen Duvet Set - 6x6ft',
-        description: 'Warm and breathable woolen duvet set perfect for cold climates. Natural temperature regulation.',
-        price: 155000,
-        originalPrice: 195000,
-        category: 'duvets',
-        images: ['duvet-wool-1.jpg', 'duvet-wool-2.jpg'],
-        specifications: [
-            { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Material', value: 'Wool blend fill' },
-            { name: 'Cover', value: 'Cotton' },
-            { name: 'Warmth', value: 'Extra warm' }
-        ]
-    },
-    {
-        id: 'd008',
-        name: 'Childrens Duvet Set - 4x6ft - Unicorn',
-        description: 'Magical unicorn-themed duvet set for children. Soft, colorful, and machine washable.',
-        price: 85000,
-        originalPrice: 110000,
-        category: 'duvets',
-        images: ['duvet-kids-unicorn-1.jpg', 'duvet-kids-unicorn-2.jpg'],
+        id: 'm062',
+        name: 'Fiber Mattress - 4x6ft 6inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 250000,
+        originalPrice: 310000,
+        category: 'mattresses',
+        images: ['fiber (1).jpeg'],
         specifications: [
             { name: 'Size', value: '4x6ft (120x180cm)' },
-            { name: 'Material', value: 'Microfiber' },
-            { name: 'Design', value: 'Unicorn pattern' },
-            { name: 'Pieces', value: '3 pieces' }
+            { name: 'Thickness', value: '6 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 60K | Free delivery KLA' }
         ]
     },
     {
-        id: 'd009',
-        name: 'Childrens Duvet Set - 4x6ft - Dinosaur',
-        description: 'Fun dinosaur-themed duvet set for children. Soft, colorful, and machine washable.',
-        price: 85000,
-        originalPrice: 110000,
-        category: 'duvets',
-        images: ['duvet-kids-dino-1.jpg', 'duvet-kids-dino-2.jpg'],
+        id: 'm063',
+        name: 'Fiber Mattress - 4x6ft 8inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 300000,
+        originalPrice: 370000,
+        category: 'mattresses',
+        images: ['fiber (2).jpeg'],
         specifications: [
             { name: 'Size', value: '4x6ft (120x180cm)' },
-            { name: 'Material', value: 'Microfiber' },
-            { name: 'Design', value: 'Dinosaur pattern' },
-            { name: 'Pieces', value: '3 pieces' }
+            { name: 'Thickness', value: '8 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 70K | Free delivery KLA' }
         ]
     },
     {
-        id: 'd010',
-        name: 'Premium Down Alternative Comforter - 6x6ft',
-        description: 'Luxurious down alternative comforter that provides warmth without the allergens. Hypoallergenic and machine washable.',
-        price: 195000,
-        originalPrice: 250000,
-        category: 'duvets',
-        images: ['comforter-down-alt-1.jpg', 'comforter-down-alt-2.jpg'],
+        id: 'm064',
+        name: 'Fiber Mattress - 4x6ft 10inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 350000,
+        originalPrice: 430000,
+        category: 'mattresses',
+        images: ['fiber (3).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Thickness', value: '10 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 80K | Free delivery KLA' }
+        ]
+    },
+    {
+        id: 'm065',
+        name: 'Fiber Mattress - 4x6ft 12inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 400000,
+        originalPrice: 490000,
+        category: 'mattresses',
+        images: ['fiber (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '4x6ft (120x180cm)' },
+            { name: 'Thickness', value: '12 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 90K | Free delivery KLA' }
+        ]
+    },
+    // 5x6
+    {
+        id: 'm066',
+        name: 'Fiber Mattress - 5x6ft 6inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 300000,
+        originalPrice: 370000,
+        category: 'mattresses',
+        images: ['fiber (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Thickness', value: '6 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 70K | Free delivery KLA' }
+        ]
+    },
+    {
+        id: 'm067',
+        name: 'Fiber Mattress - 5x6ft 8inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 350000,
+        originalPrice: 430000,
+        category: 'mattresses',
+        images: ['fiber (3).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Thickness', value: '8 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 80K | Free delivery KLA' }
+        ]
+    },
+    {
+        id: 'm068',
+        name: 'Fiber Mattress - 5x6ft 10inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 450000,
+        originalPrice: 550000,
+        category: 'mattresses',
+        images: ['fiber (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Thickness', value: '10 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 100K | Free delivery KLA' }
+        ]
+    },
+    {
+        id: 'm069',
+        name: 'Fiber Mattress - 5x6ft 12inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 550000,
+        originalPrice: 680000,
+        category: 'mattresses',
+        images: ['fiber (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '5x6ft (150x180cm)' },
+            { name: 'Thickness', value: '12 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 130K 🔥 | Free delivery KLA' }
+        ]
+    },
+    // 6x6
+    {
+        id: 'm070',
+        name: 'Fiber Mattress - 6x6ft 6inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 350000,
+        originalPrice: 430000,
+        category: 'mattresses',
+        images: ['fiber (3).jpeg'],
         specifications: [
             { name: 'Size', value: '6x6ft (180x180cm)' },
-            { name: 'Fill', value: 'Down alternative microfiber' },
-            { name: 'Cover', value: '100% cotton' },
-            { name: 'Feature', value: 'Hypoallergenic' }
+            { name: 'Thickness', value: '6 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 80K | Free delivery KLA' }
         ]
-    }*/
-
+    },
+    {
+        id: 'm071',
+        name: 'Fiber Mattress - 6x6ft 8inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 450000,
+        originalPrice: 550000,
+        category: 'mattresses',
+        images: ['fiber (1).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x6ft (180x180cm)' },
+            { name: 'Thickness', value: '8 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 100K | Free delivery KLA' }
+        ]
+    },
+    {
+        id: 'm072',
+        name: 'Fiber Mattress - 6x6ft 10inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 550000,
+        originalPrice: 680000,
+        category: 'mattresses',
+        images: ['fiber (2).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x6ft (180x180cm)' },
+            { name: 'Thickness', value: '10 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 130K 🔥 | Free delivery KLA' }
+        ]
+    },
+    {
+        id: 'm073',
+        name: 'Fiber Mattress - 6x6ft 12inch',
+        description: 'High-quality fiber mattress with pressure-relieving support. Free delivery in KLA, pay on delivery.',
+        price: 650000,
+        originalPrice: 800000,
+        category: 'mattresses',
+        images: ['fiber (3).jpeg'],
+        specifications: [
+            { name: 'Size', value: '6x6ft (180x180cm)' },
+            { name: 'Thickness', value: '12 inches' },
+            { name: 'Material', value: 'Fiber' },
+            { name: 'Promotion', value: 'Save 150K 🔥 | Free delivery KLA' }
+        ]
+    }
 ];
 
 // Export for global use
