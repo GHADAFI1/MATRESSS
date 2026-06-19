@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Fiber Mattresses – Top-Notch Mattresses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* =============================================================
+       TOP-NOTCH MATTRESSES & BEDDINGS — style.css (UPDATED)
+       Colors: Red (#e31e24), Blue (#1e3a8a), White
+       ============================================================= */
+
+    :root {
+        --primary: #e31e24;
+        --primary-dark: #b81a1f;
+        --primary-light: #ff4d4d;
+        --accent: #ffcc00;
+        --navy: #1e3a8a;
+        --navy-dark: #152e6e;
+        --white: #ffffff;
+        --black: #111111;
+        --gray-100: #f8f8f8;
+        --gray-200: #f1f1f2;
+        --gray-400: #999999;
+        --gray-700: #4d4d4d;
+        --border: #e5e5e5;
+        --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+        --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+        --shadow-lg: 0 8px 40px rgba(0,0,0,0.18);
+        --transition: all 0.25s ease;
+        --radius: 10px;
+        --radius-sm: 6px;
+        --radius-xl: 24px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: var(--gray-100);
+        color: var(--black);
+        overflow-x: hidden;
+    }
+
+    .container { width: 92%; max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+
+    /* ========== PROMO BAR ========== */
+    .promo-bar {
+        background: var(--navy-dark);
+        color: var(--white);
+        text-align: center;
+        padding: 8px 16px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .promo-bar span { display: flex; align-items: center; gap: 6px; }
+    .promo-bar .accent { color: var(--accent); font-weight: 700; }
+
+    /* ========== DEAL BANNER ========== */
+    .deal-banner {
+        background: var(--navy);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .deal-banner .mega { font-family: 'Bebas Neue', sans-serif; color: var(--white); font-size: 24px; }
+    .deal-banner .home-tag { background: var(--black); color: #65b4d3; font-weight: 900; font-size: 13px; padding: 4px 10px; transform: skewX(-12deg); }
+    .deal-banner .savings { font-family: 'Bebas Neue', sans-serif; color: var(--white); font-size: 22px; }
+    .deal-banner .today { color: var(--white); font-weight: 600; font-size: 13px; }
+    .deal-banner .shop-now-link { color: var(--primary-light); font-weight: 700; text-decoration: none; }
+    .deal-banner .call-box { margin-left: auto; background: linear-gradient(135deg, var(--primary-light), var(--primary)); padding: 6px 18px; clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%); text-align: center; }
+    .deal-banner .call-box p { font-weight: 700; font-size: 11px; color: var(--navy-dark); }
+    .deal-banner .call-box .phone { font-size: 12px; }
+
+    /* ========== BRAND BAR ========== */
+    .brand-bar {
+        background: var(--gray-200);
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .best-deals { font-size: 13px; color: var(--primary); font-weight: 700; }
+    .best-deals span { color: var(--black); }
+    .afrishop-logo-sm { font-size: 18px; font-weight: 900; color: var(--primary); }
+    .afrishop-logo-sm span { color: rgba(0,0,0,0.8); }
+    .we-deliver { font-size: 11px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; }
+    .icon-group { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+    .icon-btn { display: flex; align-items: center; gap: 4px; font-size: 18px; color: var(--gray-700); background: none; border: none; cursor: pointer; position: relative; }
+    .icon-btn .badge { position: absolute; top: -6px; right: -8px; background: var(--primary); color: white; font-size: 9px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .shop-now-sm { font-size: 16px; font-weight: 800; color: var(--gray-400); }
+
+    /* ========== MAIN NAV ========== */
+    .main-nav {
+        background: var(--white);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        box-shadow: var(--shadow-sm);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        flex-wrap: wrap;
+    }
+    .hamburger { background: none; border: none; cursor: pointer; display: none; flex-direction: column; gap: 4px; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--gray-700); border-radius: 2px; transition: var(--transition); }
+    .afrishop-logo { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--primary); text-decoration: none; }
+    .afrishop-logo span { color: var(--black); }
+
+    .search-bar {
+        flex: 1;
+        max-width: 450px;
+        display: flex;
+        border: 2px solid var(--border);
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .search-bar input { flex: 1; padding: 9px 16px; border: none; outline: none; font-size: 13px; }
+    .search-bar button { padding: 9px 18px; background: var(--primary); color: white; border: none; cursor: pointer; font-weight: 600; font-size: 12px; transition: var(--transition); }
+    .search-bar button:hover { background: var(--primary-dark); }
+
+    .nav-links { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .nav-link { display: flex; align-items: center; gap: 6px; padding: 8px 12px; font-size: 13px; font-weight: 600; color: var(--gray-700); text-decoration: none; border-radius: var(--radius-sm); transition: var(--transition); }
+    .nav-link:hover { color: var(--primary); background: rgba(227,30,36,0.06); }
+    .nav-link.active { color: var(--primary); }
+
+    .dropdown-wrapper { position: relative; }
+    .dropdown-wrapper .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--white);
+        box-shadow: var(--shadow-md);
+        border-radius: var(--radius-sm);
+        padding: 8px 0;
+        min-width: 180px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-6px);
+        transition: var(--transition);
+        z-index: 200;
+        border-top: 3px solid var(--primary);
+        list-style: none;
+    }
+    .dropdown-wrapper:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .dropdown li a { display: block; padding: 8px 18px; font-size: 13px; color: var(--gray-700); text-decoration: none; }
+    .dropdown li a:hover { color: var(--primary); background: var(--gray-100); }
+
+    /* ========== BREADCRUMB ========== */
+    .breadcrumb-bar { background: var(--gray-200); padding: 8px 20px; font-size: 12px; color: var(--gray-400); }
+    .breadcrumb-bar a { color: var(--primary); text-decoration: none; }
+
+    /* ========== HERO SECTION ========== */
+    .hero { background: linear-gradient(100deg, var(--primary-light), var(--primary), var(--primary-dark)); padding: 15px; }
+    .hero-inner { background: var(--navy); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 180px 1fr 1fr; min-height: 380px; }
+
+    .category-sidebar { background: var(--white); padding: 12px 0; border-radius: 12px 0 0 12px; }
+    .category-sidebar h3 { font-size: 11px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; padding: 0 12px 8px; border-bottom: 1px solid #eee; }
+    .category-list li a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; font-size: 12px; color: var(--gray-700); text-decoration: none; border-left: 3px solid transparent; transition: var(--transition); }
+    .category-list li a:hover { background: rgba(227,30,36,0.06); border-left-color: var(--primary); color: var(--primary); }
+    .category-list li .cat-icon { width: 26px; height: 26px; background: var(--gray-200); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+
+    .hero-text { display: flex; flex-direction: column; justify-content: center; padding: 20px; }
+    .hero-text .tag { background: rgba(255,255,255,0.1); color: var(--primary-light); font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 20px; width: fit-content; margin-bottom: 12px; }
+    .hero-text h1 { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--white); line-height: 1; }
+    .hero-text h1 .highlight { display: block; color: var(--primary); -webkit-text-stroke: 0; }
+    .hero-text .discount-badge { margin-top: 12px; background: var(--white); border-radius: 8px; padding: 8px 16px; display: inline-flex; align-items: center; gap: 8px; width: fit-content; }
+    .hero-text .discount-badge .up-to { font-size: 10px; font-weight: 700; color: var(--gray-400); }
+    .hero-text .discount-badge .pct { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--primary); }
+    .hero-text .cta-btn { margin-top: 12px; display: inline-flex; align-items: center; gap: 6px; background: var(--primary); color: white; font-weight: 700; font-size: 12px; padding: 8px 20px; border-radius: 24px; text-decoration: none; width: fit-content; }
+
+    .hero-slider-wrap { position: relative; overflow: hidden; border-radius: 0 12px 12px 0; }
+    .advert-slider { position: relative; width: 100%; height: 100%; }
+    .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.5s ease; display: flex; align-items: center; justify-content: center;  }
+      .slide.active { opacity: 1; }
+    .slide img { width: 100%; height: 100%; object-fit: cover; }
+    .slider-controls { position: absolute; top: 50%; transform: translateY(-50%); left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 10px; z-index: 10; }
+    .slider-controls button { width: 32px; height: 32px; background: rgba(0,0,0,0.4); color: white; border: none; border-radius: 50%; cursor: pointer; font-size: 12px; }
+    .slider-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 10; }
+    .slider-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; border: none; }
+    .slider-dot.active { background: var(--white); width: 18px; border-radius: 3px; }
+    .slide-counter { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.45); color: white; font-size: 10px; padding: 2px 8px; border-radius: 10px; z-index: 10; }
+
+    /* ========== FEATURES STRIP ========== */
+    .features-strip { background: var(--white); display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--border); }
+    .feature-item { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-right: 1px solid var(--border); transition: var(--transition); }
+    .feature-item:last-child { border-right: none; }
+    .feature-item .f-icon { width: 38px; height: 38px; background: rgba(227,30,36,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; color: var(--primary); }
+    .feature-item h4 { font-size: 12px; font-weight: 700; margin-bottom: 2px; }
+    .feature-item p { font-size: 10px; color: var(--gray-400); }
+
+    /* ========== SECTIONS ========== */
+    .section-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; position: relative; }
+    .section-title::after { content: ''; display: block; width: 50px; height: 3px; background: var(--primary); margin: 8px auto 0; border-radius: 2px; }
+    .categories { padding: 40px 0; background: linear-gradient(100deg, var(--primary-light), var(--primary), var(--primary-dark)); }
+    .categories .section-title { color: var(--white); }
+    .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+
+    .category-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); text-align: center; cursor: pointer; transition: var(--transition); }
+    .category-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .category-card img { width: 100%; height: 200px; object-fit: cover; }
+    .category-info { padding: 15px; }
+    .category-info h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+    .view-more { display: inline-block; color: var(--primary); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 20px; background: rgba(227,30,36,0.08); text-decoration: none; transition: var(--transition); }
+    .view-more:hover { background: var(--primary); color: white; }
+
+    .featured-products { padding: 40px 0; background: var(--white); }
+    .product-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--border); transition: var(--transition); }
+    .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .product-image { position: relative; height: 180px; overflow: hidden; cursor: pointer; background: var(--gray-100); }
+    .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+    .product-card:hover .product-image img { transform: scale(1.05); }
+    .discount-badge { position: absolute; top: 8px; right: 8px; background: linear-gradient(135deg, #28a745, #1e7e34); color: white; padding: 3px 8px; border-radius: 20px; font-size: 10px; font-weight: 700; }
+    .product-info { padding: 12px; }
+    .product-name { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--black); }
+    .product-price { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+    .current-price { font-size: 14px; font-weight: 700; color: var(--primary); }
+    .original-price { font-size: 11px; text-decoration: line-through; color: var(--gray-400); }
+    .product-description { font-size: 11px; color: var(--gray-400); margin-bottom: 10px; }
+    .add-cart-btn { width: 100%; padding: 8px; background: var(--primary); color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 12px; font-weight: 600; transition: var(--transition); }
+    .add-cart-btn:hover { background: var(--primary-dark); }
+
+    /* ========== MOBILE MENU ========== */
+    .mobile-menu {
+        position: fixed; top: 0; left: -280px; bottom: 0; width: 280px;
+        background: var(--white); box-shadow: var(--shadow-lg); z-index: 2000;
+        transition: left 0.3s ease; overflow-y: auto; padding: 20px 0;
+    }
+    .mobile-menu.open { left: 0; }
+    .mobile-menu-header { display: flex; justify-content: space-between; padding: 0 20px 20px; border-bottom: 1px solid #eee; }
+    .mobile-close { background: none; border: none; font-size: 20px; cursor: pointer; }
+    .mobile-menu .cat-item { padding: 12px 20px; border-bottom: 1px solid #f5f5f5; }
+    .mobile-menu .cat-item a { text-decoration: none; color: var(--gray-700); display: flex; align-items: center; gap: 12px; font-size: 14px; }
+    .overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1999; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+    .overlay.show { opacity: 1; pointer-events: all; }
+
+    /* ========== FOOTER ========== */
+    footer { background: #0f0f0f; color: var(--white); padding: 40px 0 20px; }
+    .footer-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+    .footer-column h3 { font-size: 14px; font-weight: 700; margin-bottom: 15px; }
+    .footer-column h3::after { content: ''; display: block; width: 30px; height: 2px; background: var(--primary); margin-top: 6px; }
+    .footer-column p { color: #9e9e9e; font-size: 12px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { color: #9e9e9e; font-size: 12px; text-decoration: none; transition: var(--transition); }
+    .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+    .social-links { display: flex; gap: 10px; }
+    .social-links a { width: 34px; height: 34px; background: rgba(227,30,36,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); transition: var(--transition); }
+    .social-links a:hover { background: var(--primary); color: white; }
+    .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #2a2a2a; color: #666; font-size: 11px; }
+
+    /* ========== FAB BUTTONS ========== */
+    .fab-container { position: fixed; bottom: 20px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+    .fab-main { width: 48px; height: 48px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: var(--shadow-md); cursor: pointer; transition: var(--transition); position: relative; }
+    .fab-main:hover { transform: scale(1.1); }
+    .fab-whatsapp { background: #25D366; }
+    .fab-call { background: #007BFF; }
+    .fab-cart-count { position: absolute; top: -4px; right: -4px; background: #28a745; color: white; border-radius: 50%; width: 18px; height: 18px; font-size: 10px; display: flex; align-items: center; justify-content: center; border: 2px solid white; }
+    .fab-cart-container { position: absolute; bottom: 60px; right: 0; width: 320px; background: white; border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 15px; opacity: 0; visibility: hidden; transform: translateY(10px); transition: var(--transition); }
+    .fab-container.cart-active .fab-cart-container { opacity: 1; visibility: visible; transform: translateY(0); }
+    .fab-cart-header { display: flex; justify-content: space-between; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+    .fab-cart-header h3 { font-size: 14px; }
+    .fab-cart-close { background: none; border: none; cursor: pointer; }
+    .fab-cart-items { max-height: 260px; overflow-y: auto; margin-bottom: 10px; }
+    .fab-cart-item { display: flex; gap: 10px; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #f5f5f5; }
+    .fab-cart-item-image { width: 50px; height: 50px; border-radius: 6px; overflow: hidden; background: var(--gray-100); }
+    .fab-cart-item-image img { width: 100%; height: 100%; object-fit: cover; }
+    .fab-cart-item-name { font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+    .fab-cart-item-price { font-size: 11px; color: var(--primary); font-weight: 700; }
+    .fab-cart-total { display: flex; justify-content: space-between; font-weight: 700; font-size: 13px; margin-bottom: 10px; }
+    .fab-cart-buttons .btn { display: block; text-align: center; background: var(--primary); color: white; padding: 8px; border-radius: 25px; text-decoration: none; font-size: 12px; font-weight: 600; }
+
+    /* ========== NOTIFICATION ========== */
+    .notification { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(80px); background: #28a745; color: white; padding: 10px 20px; border-radius: 30px; font-size: 13px; font-weight: 600; opacity: 0; transition: all 0.3s; z-index: 2000; }
+    .notification.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+        .hero-inner { grid-template-columns: 1fr 1fr; }
+        .category-sidebar { display: none; }
+        .features-strip { grid-template-columns: repeat(2, 1fr); }
+        .category-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    }
+
+    @media (max-width: 768px) {
+        .hamburger { display: flex; }
+        .nav-links { display: none; }
+        .search-bar { max-width: 100%; margin: 10px 0; order: 3; width: 100%; }
+        .main-nav { flex-wrap: wrap; }
+        .afrishop-logo { order: 1; }
+        .hamburger { order: 2; margin-left: auto; }
+        .hero { padding: 10px; }
+        .hero-inner { grid-template-columns: 1fr; grid-template-rows: auto 280px; min-height: auto; }
+        .hero-text { padding: 20px 15px; order: 1; }
+        .hero-slider-wrap { border-radius: 0 0 12px 12px; order: 2; min-height: 280px; }
+        .advert-slider { min-height: 280px; }
+        .slide { position: absolute; inset: 0; }
+        .slide img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+        .slider-controls button { width: 32px; height: 32px; font-size: 12px; }
+        .slider-dots { bottom: 10px; }
+        .slider-dot { width: 6px; height: 6px; }
+        .slider-dot.active { width: 18px; }
+    }
+
+    @media (max-width: 640px) {
+        .deal-banner { justify-content: center; }
+        .deal-banner .call-box { margin-left: 0; }
+        .hero { padding: 10px; }
+        .hero-inner { grid-template-columns: 1fr; grid-template-rows: auto 220px; min-height: auto; }
+        .hero-text { padding: 15px; }
+        .hero-text h1 { font-size: 28px; }
+        .hero-text .discount-badge .pct { font-size: 22px; }
+        .hero-text .cta-btn { font-size: 11px; padding: 6px 16px; }
+        .hero-slider-wrap { border-radius: 0 0 12px 12px; height: 220px; }
+        .features-strip { grid-template-columns: repeat(2, 1fr); }
+        .promo-bar { flex-direction: column; gap: 4px; font-size: 10px; }
+        .brand-bar { gap: 8px; }
+        .section-title { font-size: 1.3rem; }
+        .category-card img { height: 160px; }
+    }
+
+    @media (max-width: 480px) {
+        .container { width: 95%; padding: 0 8px; }
+        .features-strip { grid-template-columns: 1fr; }
+        .feature-item { border-right: none; border-bottom: 1px solid var(--border); }
+        .category-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .product-image { height: 140px; }
+        .product-name { font-size: 11px; }
+        .current-price { font-size: 12px; }
+        .fab-cart-container { width: 290px; right: -10px; }
+        .hero-text h1 { font-size: 24px; }
+        .hero-inner { grid-template-rows: auto 180px; }
+        .category-card img { height: 140px; }
+        .hero-inner { grid-template-rows: auto 200px; }
+        .hero-slider-wrap { min-height: 200px; }
+        .advert-slider { min-height: 200px; }
+        .slide img { object-fit: contain; }
+    }
+
+    /* Hero section images display fully */
+    .hero { background: linear-gradient(100deg, var(--primary-light), var(--primary), var(--primary-dark)); padding: 15px; }
+    .hero-inner { background: var(--navy); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 180px 1fr 1fr; min-height: 380px; }
+    .hero-slider-wrap { position: relative; overflow: hidden; border-radius: 0 12px 12px 0; background: var(--navy); }
+    .advert-slider { position: relative; width: 100%; height: 100%; min-height: 350px; }
+    .slide { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.5s ease-in-out; display: flex; align-items: center; justify-content: center; background: var(--navy); overflow: hidden; }
+    .slide.active { opacity: 1; z-index: 1; }
+    .slide img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
+    .slide-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(30,58,138,0.3), rgba(0,0,0,0.1)); pointer-events: none; }
+    .slider-controls { position: absolute; top: 50%; transform: translateY(-50%); left: 0; right: 0; display: flex; justify-content: space-between; padding: 0 10px; z-index: 20; }
+    .slider-controls button { width: 36px; height: 36px; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; cursor: pointer; font-size: 14px; backdrop-filter: blur(4px); transition: var(--transition); z-index: 20; }
+    .slider-controls button:hover { background: var(--primary); transform: scale(1.1); }
+    .slider-dots { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 20; }
+    .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; border: none; transition: var(--transition); padding: 0; }
+    .slider-dot.active { background: var(--white); width: 24px; border-radius: 4px; }
+    .slide-counter { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.5); backdrop-filter: blur(4px); color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; z-index: 20; }
+    @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr 1fr; } .category-sidebar { display: none; } .advert-slider { min-height: 320px; } .slide img { object-fit: contain; } }
+    @media (max-width: 768px) { .hero { padding: 10px; } .hero-inner { grid-template-columns: 1fr; grid-template-rows: auto 280px; min-height: auto; } .hero-text { padding: 20px 15px; order: 1; } .hero-slider-wrap { border-radius: 0 0 12px 12px; order: 2; min-height: 280px; } .advert-slider { min-height: 280px; } .slide { position: absolute; inset: 0; } .slide img { width: 100%; height: 100%; object-fit: contain; object-position: center; } .slider-controls button { width: 32px; height: 32px; font-size: 12px; } .slider-dots { bottom: 10px; } .slider-dot { width: 6px; height: 6px; } .slider-dot.active { width: 18px; } }
+    @media (max-width: 480px) { .hero-inner { grid-template-rows: auto 240px; } .hero-slider-wrap { min-height: 240px; } .advert-slider { min-height: 240px; } .slide img { object-fit: contain; width: 100%; height: 100%; } .hero-text h1 { font-size: 24px; } .hero-text .discount-badge .pct { font-size: 20px; } .slider-controls button { width: 28px; height: 28px; font-size: 10px; } }
+    @media (max-width: 380px) { .hero-inner { grid-template-rows: auto 200px; } .hero-slider-wrap { min-height: 200px; } .advert-slider { min-height: 200px; } .slide img { object-fit: contain; } }
+
+    /* ----- product grid overrides (2 per row, per-card add button) ----- */
+    .product-grid-page {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 30px 0 20px;
+    }
+    .product-card-grid {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      padding: 18px 16px 20px;
+      transition: 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #eee;
+    }
+    .product-card-grid:hover { transform: translateY(-3px); box-shadow:0 6px 24px rgba(0,0,0,0.10); }
+    .product-card-grid .product-image-wrap {
+      width:100%;
+      aspect-ratio: 920 / 1124;  /* <--- UPDATED IMAGE ASPECT RATIO */
+      background:#f1f1f2;
+      border-radius:12px;
+      overflow:hidden;
+      margin-bottom:12px;
+      position:relative;
+    }
+    .product-card-grid .product-image-wrap img {
+      width:100%;
+      height:100%;
+      object-fit:contain;        /* <--- show full image with no crop */
+      display:block;
+    }
+    .product-card-grid .product-title {
+      font-size:1.1rem;
+      font-weight:700;
+      color:#1e3a8a;
+      margin-bottom:6px;
+    }
+    .product-card-grid .price-row {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:4px 0 12px;
+    }
+    .product-card-grid .price-current {
+      font-weight:700;
+      font-size:1.2rem;
+      color:#e31e24;
+    }
+    .product-card-grid .price-original {
+      font-size:0.85rem;
+      text-decoration:line-through;
+      color:#999;
+    }
+    .product-card-grid .discount-tag {
+      background:#28a745;
+      color:#fff;
+      font-weight:600;
+      font-size:0.7rem;
+      padding:2px 10px;
+      border-radius:30px;
+    }
+    .size-selector-wrap { margin-bottom:14px; }
+    .size-selector-wrap label { font-weight:600; font-size:0.8rem; display:block; margin-bottom:6px; color:#1e3a8a; }
+    .size-grid-sm {
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      gap:6px;
+    }
+    .size-btn-sm {
+      appearance:none;
+      border:1.5px solid #e5e5e5;
+      background:#fff;
+      border-radius:30px;
+      padding:6px 2px;
+      font-size:0.65rem;
+      font-weight:600;
+      color:#4d4d4d;
+      cursor:pointer;
+      text-align:center;
+      transition:0.15s;
+    }
+    .size-btn-sm:hover { border-color:#1e3a8a; }
+    .size-btn-sm.selected { background:#1e3a8a; border-color:#1e3a8a; color:#fff; }
+    .qty-row {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:8px;
+    }
+    .qty-row label { font-weight:600; font-size:0.8rem; }
+    .qty-control {
+      display:flex;
+      border:1px solid #e5e5e5;
+      border-radius:30px;
+      overflow:hidden;
+    }
+    .qty-control button {
+      width:30px;
+      height:30px;
+      background:#f1f1f2;
+      border:none;
+      cursor:pointer;
+      font-size:1rem;
+    }
+    .qty-control input {
+      width:44px;
+      height:30px;
+      text-align:center;
+      border:none;
+      border-left:1px solid #e5e5e5;
+      border-right:1px solid #e5e5e5;
+      font-size:0.8rem;
+    }
+    .card-add-btn {
+      background: #e31e24;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
+      margin-top: 4px;
+    }
+    .card-add-btn:hover { background: #b81a1f; transform: translateY(-1px); }
+    .card-add-btn i { font-size: 0.7rem; }
+    .card-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+    .global-actions {
+      background: #fff;
+      border-radius: 20px;
+      padding: 24px 20px;
+      margin: 10px 0 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      border: 1px solid #eee;
+    }
+    .global-actions .btn-action {
+      flex: 1 1 200px;
+      min-width: 180px;
+      padding: 14px 16px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #e31e24;
+      color: #fff;
+    }
+    .global-actions .btn-action i { font-size: 1.1rem; }
+    .global-actions .btn-action:hover { transform: translateY(-2px); filter: brightness(0.95); }
+    .global-actions .btn-whatsapp-global { background: #25D366; color: #fff; }
+    .global-actions .btn-continue-global { background: #fff; color: #1e3a8a; border: 2px solid #1e3a8a; }
+    .global-actions .btn-continue-global:hover { background: #1e3a8a; color: #fff; }
+    .toast { position:fixed; left:50%; bottom:28px; transform:translate(-50%,12px); background:#111; color:#fff; padding:10px 18px; border-radius:24px; font-size:14px; opacity:0; pointer-events:none; transition:0.2s; z-index:2500; white-space:nowrap; max-width:90vw; }
+    .toast.show { opacity:1; transform:translate(-50%,0); }
+
+    @media (max-width:700px) {
+      .product-grid-page { grid-template-columns:1fr 1fr; gap:14px; }
+      .product-card-grid { padding:12px 10px 14px; }
+      .product-card-grid .product-title { font-size:0.9rem; }
+      .size-grid-sm { grid-template-columns:repeat(3,1fr); gap:4px; }
+      .size-btn-sm { font-size:0.55rem; padding:4px 0; }
+      .price-current { font-size:1rem; }
+      .global-actions .btn-action { font-size:0.85rem; padding:12px 10px; min-width:140px; }
+      .card-add-btn { font-size:0.7rem; padding:6px 10px; }
+    }
+    @media (max-width:480px) {
+      .product-grid-page { grid-template-columns:1fr 1fr; gap:10px; }
+      .product-card-grid { padding:10px 8px 12px; }
+      .product-card-grid .product-title { font-size:0.8rem; }
+      .size-grid-sm { grid-template-columns:repeat(3,1fr); gap:3px; }
+      .size-btn-sm { font-size:0.5rem; padding:3px 0; border-radius:20px; }
+      .price-current { font-size:0.9rem; }
+      .global-actions { flex-direction:column; align-items:stretch; padding:16px; }
+      .global-actions .btn-action { min-width:auto; }
+      .card-add-btn { font-size:0.6rem; padding:5px 8px; }
+    }
+    .breadcrumb-bar { background:#f1f1f2; padding:8px 20px; font-size:12px; color:#999; }
+    .breadcrumb-bar a { color:#e31e24; text-decoration:none; }
+    .more-products-cta {
+      margin:10px 0 20px;
+      text-align:center;
+      background:#fff;
+      border-radius:16px;
+      padding:30px 20px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.06);
+    }
+    .more-products-cta h2 { color:#1e3a8a; margin-bottom:6px; }
+    .more-products-cta p { color:#999; margin-bottom:16px; font-size:0.9rem; }
+    .view-more {
+      display:inline-block;
+      background:#e31e24;
+      color:#fff;
+      padding:10px 24px;
+      border-radius:40px;
+      font-weight:600;
+      text-decoration:none;
+    }
+    .view-more:hover { background:#b81a1f; }
+
+    /* Cart page styles */
+    .empty-cart { text-align: center; padding: 60px 20px; background: white; border-radius: 16px; }
+    .empty-cart i { font-size: 60px; color: var(--gray-400); margin-bottom: 20px; }
+    .empty-cart p { font-size: 18px; color: var(--gray-400); }
+    .cart-item { display: flex; gap: 20px; padding: 20px; background: white; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border); }
+    .cart-item-image { width: 120px; height: 120px; border-radius: 8px; overflow: hidden; flex-shrink: 0; }
+    .cart-item-image img { width: 100%; height: 100%; object-fit: cover; }
+    .cart-item-details { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .cart-item-name { font-size: 16px; font-weight: 600; margin-bottom: 5px; }
+    .cart-item-price { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+    .cart-item-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .quantity-control { display: flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .quantity-control button { width: 35px; height: 35px; background: var(--gray-100); border: none; cursor: pointer; font-size: 16px; }
+    .quantity-control input { width: 50px; text-align: center; border: none; border-left: 1px solid var(--border); border-right: 1px solid var(--border); font-size: 14px; }
+    .remove-item { color: var(--primary); cursor: pointer; font-size: 14px; display: flex; align-items: center; gap: 5px; }
+    .remove-item:hover { text-decoration: underline; }
+    .cart-summary { background: white; border-radius: 12px; padding: 24px; border: 1px solid var(--border); }
+    .cart-summary h3 { margin-bottom: 15px; }
+    .cart-summary-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .cart-summary-total { display: flex; justify-content: space-between; padding: 15px 0; font-size: 20px; font-weight: 700; }
+    .checkout-btn { width: 100%; padding: 14px; background: var(--primary); color: white; border: none; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer; transition: var(--transition); }
+    .checkout-btn:hover { background: var(--primary-dark); }
+  </style>
+</head>
+<body>
+
+<!-- mobile menu / overlay -->
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <a class="afrishop-logo" href="index.html">TOP-NOTCH<span>MATTRESSES</span></a>
+    <button class="mobile-close" id="closeMobileBtn"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cat-item"><a href="category.html?cat=mattresses"><i class="fas fa-bed"></i> Mattresses</a></div>
+  <div class="cat-item"><a href="category.html?cat=bedsheets"><i class="fas fa-bed"></i> Bedsheets</a></div>
+  <div class="cat-item"><a href="category.html?cat=duvets"><i class="fas fa-tshirt"></i> Duvets & Bedcovers</a></div>
+  <div class="cat-item"><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></div>
+  <div class="cat-item"><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></div>
+</nav>
+
+<!-- promo / brand / nav -->
+<div class="promo-bar"><span><i class="fas fa-truck"></i> Free Delivery on Orders Over UGX 500k</span><span class="accent">|</span><span><i class="fas fa-tag"></i> <span class="accent">GRAND SALE</span> – Up to 50% OFF!</span><span class="accent">|</span><span><i class="fas fa-shield-alt"></i> Quality Assured</span></div>
+<div class="deal-banner"><div class="brand-badge"><span class="mega">Top-Notch</span><span class="home-tag">BEDDINGS</span><span class="savings">Savings</span></div><span class="today"><i class="far fa-clock"></i> LIMITED OFFER</span><a href="#" class="shop-now-link">SHOP NOW <i class="fas fa-chevron-right"></i></a><div class="call-box"><p>📞 Call for Deals</p><p class="phone">0758647456</p></div></div>
+<div class="brand-bar"><span class="best-deals">Get Best <span>Deals</span></span><span class="afrishop-logo-sm">TOP-NOTCH<span>MATTRESSES</span></span><span class="we-deliver"><i class="fas fa-truck"></i> We Deliver</span><div class="icon-group"><button class="icon-btn" title="Wishlist"><i class="far fa-heart"></i><span class="badge">3</span></button><button class="icon-btn" title="Account"><i class="far fa-user"></i></button><a href="cart.html" class="icon-btn" title="Cart"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a><span class="shop-now-sm">SHOP NOW</span></div></div>
+
+<header class="main-nav">
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a class="afrishop-logo" href="index.html">TOP-NOTCH<span>MATTRESSES</span></a>
+  <div class="search-bar"><input type="text" placeholder="Search products..." id="searchInput" onkeydown="if(event.key==='Enter')doSearch()"><button onclick="doSearch()"><i class="fas fa-search"></i> Search</button></div>
+  <nav class="nav-links"><div class="dropdown-wrapper"><a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="category.html?cat=mattresses">Mattresses</a></li><li><a href="category.html?cat=bedsheets">Bedsheets</a></li><li><a href="category.html?cat=duvets">Duvets & Bedcovers</a></li></ul></div><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> <span>About</span></a><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a><a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> <span>Cart</span><span id="cart-count-nav">0</span></a></nav>
+</header>
+
+<!-- breadcrumb -->
+<div class="breadcrumb-bar"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <a href="category.html?cat=mattresses">Mattresses</a> <i class="fas fa-chevron-right"></i> <span>Fiber Mattresses</span></div>
+
+<!-- ===== PRODUCT GRID ===== -->
+<section class="product-detail-page" style="padding:0 0 10px 0;">
+  <div class="container">
+    <div id="productGridContainer" class="product-grid-page"></div>
+
+    <!-- GLOBAL ACTIONS -->
+    <div class="global-actions">
+      <button class="btn-action" id="globalAddToCart"><i class="fas fa-shopping-cart"></i> Add All to Cart</button>
+      <button class="btn-action btn-whatsapp-global" id="globalWhatsappBuy"><i class="fab fa-whatsapp"></i> Buy All via WhatsApp</button>
+      <a href="index.html" class="btn-action btn-continue-global"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+    </div>
+
+    <div class="more-products-cta">
+      <h2>Looking for something else?</h2>
+      <p>Browse our full range of mattresses, bedsheets, duvets and bedcovers.</p>
+      <a href="category.html?cat=mattresses" class="view-more">Browse More Mattresses <i class="fas fa-chevron-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer><div class="container"><div class="footer-container"><div class="footer-column"><h3>About Top-Notch</h3><p>Your trusted source for premium mattresses and beddings in Uganda.</p></div><div class="footer-column"><h3>Quick Links</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms & Conditions</a></li></ul></div><div class="footer-column"><h3>Contact Us</h3><p><i class="fas fa-map-marker-alt"></i> Kisenyi Bus Terminal Building, Kampala</p><p><i class="fas fa-phone"></i> 0758647456</p><p><i class="fas fa-envelope"></i> topnotchmattresses@gmail.com</p></div><div class="footer-column"><h3>Follow Us</h3><div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-tiktok"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div></div><div class="footer-bottom"><p>&copy; 2025 Top-Notch Mattresses & Beddings. All Rights Reserved.</p></div></div></footer>
+
+<!-- FAB -->
+<div class="fab-container" id="fabContainer">
+  <div class="fab-main fab-cart" id="fabCartToggle"><i class="fas fa-shopping-cart"></i><span class="fab-cart-count" id="fabCartCount">0</span></div>
+  <div class="fab-main fab-whatsapp" id="fabWhatsapp"><i class="fab fa-whatsapp"></i></div>
+  <div class="fab-main fab-call" id="fabCall"><i class="fas fa-phone"></i></div>
+  <div class="fab-cart-container"><div class="fab-cart-header"><h3>Your Cart</h3><button class="fab-cart-close" id="fabCartClose"><i class="fas fa-times"></i></button></div><div class="fab-cart-items" id="fabCartItems"></div><div class="fab-cart-summary"><div class="fab-cart-total"><span>Total:</span><span id="fab-cart-total">UGX 0</span></div><div class="fab-cart-buttons"><button class="btn" id="fabCheckoutWhatsapp" style="border:none;width:100%;cursor:pointer;background:#25D366;margin-bottom:8px;">Checkout via WhatsApp</button><a href="cart.html" class="btn" style="background:#1e3a8a;">View Full Cart Page</a></div></div></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// =============================================================
+// PRODUCT DATA - Fiber Mattresses
+// =============================================================
+var products = [
+  {
+    id: 1,
+    name: 'Fiber Mattress 6 inch',
+    category: 'mattresses',
+    price: 270000,
+    originalPrice: 300000,
+    images: ['6.jpeg'],
+    description: 'High-quality fiber mattress with comfortable support. Available in multiple sizes.',
+    specifications: [
+      { name: 'Thickness', value: '6 inch' },
+      { name: 'Material', value: 'High-density fiber' },
+      { name: 'Warranty', value: '1 year' }
+    ],
+    sizes: [
+      { size: '4x6', price: 270000, original: 300000 },
+      { size: '5x6', price: 370000, original: 400000 },
+      { size: '6x6', price: 470000, original: 500000 }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Fiber Mattress 8 inch',
+    category: 'mattresses',
+    price: 320000,
+    originalPrice: null,
+    images: ['8.jpeg'],
+    description: 'Premium 8-inch fiber mattress for superior comfort and durability.',
+    specifications: [
+      { name: 'Thickness', value: '8 inch' },
+      { name: 'Material', value: 'High-density fiber' },
+      { name: 'Warranty', value: '2 years' }
+    ],
+    sizes: [
+      { size: '4x6', price: 320000, original: null },
+      { size: '5x6', price: 350000, original: null },
+      { size: '6x6', price: 470000, original: null }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Fiber Mattress 10 inch',
+    category: 'mattresses',
+    price: 370000,
+    originalPrice: null,
+    images: ['10.jpeg'],
+    description: 'Luxurious 10-inch fiber mattress with enhanced support and comfort.',
+    specifications: [
+      { name: 'Thickness', value: '10 inch' },
+      { name: 'Material', value: 'Premium fiber' },
+      { name: 'Warranty', value: '2 years' }
+    ],
+    sizes: [
+      { size: '4x6', price: 370000, original: null },
+      { size: '5x6', price: 470000, original: null },
+      { size: '6x6', price: 570000, original: null }
+    ]
+  },
+  {
+    id: 4,
+    name: 'Fiber Mattress 12 inch',
+    category: 'mattresses',
+    price: 420000,
+    originalPrice: null,
+    images: ['12.jpeg'],
+    description: 'Ultimate comfort with our 12-inch premium fiber mattress.',
+    specifications: [
+      { name: 'Thickness', value: '12 inch' },
+      { name: 'Material', value: 'Premium fiber' },
+      { name: 'Warranty', value: '3 years' }
+    ],
+    sizes: [
+      { size: '4x6', price: 420000, original: null },
+      { size: '5x6', price: 570000, original: null },
+      { size: '6x6', price: 670000, original: null }
+    ]
+  }
+];
+
+// =============================================================
+// SCRIPT.JS - Complete functionality
+// =============================================================
+var SESSION_CART_KEY = 'topnotch_session_cart';
+
+// ========== CART FUNCTIONS ==========
+function getCart() {
+    var cart = sessionStorage.getItem(SESSION_CART_KEY);
+    return cart ? JSON.parse(cart) : [];
+}
+
+function saveCart(cart) {
+    sessionStorage.setItem(SESSION_CART_KEY, JSON.stringify(cart));
+    updateCartCount();
+}
+
+function addToCart(productId, quantity) {
+    var finalQty = typeof quantity === 'function' ? quantity() : (quantity || 1);
+    if (finalQty < 1) finalQty = 1;
+    var cart = getCart();
+    var product = products.find(function(p) { return p.id == productId; });
+    if (!product) return;
+    var existing = cart.find(function(item) { return item.id == productId; });
+    if (existing) {
+        existing.quantity += finalQty;
+    } else {
+        cart.push({ id: productId, name: product.name, price: product.price, image: product.images[0], quantity: finalQty });
+    }
+    saveCart(cart);
+    updateFabCart();
+}
+
+function removeFromCart(productId) {
+    var cart = getCart();
+    cart = cart.filter(function(item) { return item.id != productId; });
+    saveCart(cart);
+    updateFabCart();
+}
+
+function updateCartItem(productId, quantity) {
+    if (quantity < 1) quantity = 1;
+    var cart = getCart();
+    var item = cart.find(function(i) { return i.id == productId; });
+    if (item) { item.quantity = quantity; saveCart(cart); updateFabCart(); }
+}
+
+function updateCartCount() {
+    var cart = getCart();
+    var total = cart.reduce(function(t, i) { return t + i.quantity; }, 0);
+    document.querySelectorAll('#cart-count, #cart-count-nav, .fab-cart-count').forEach(function(el) { if(el) el.textContent = total; });
+}
+
+function updateCartSummary() {
+    var cart = getCart();
+    var subtotal = cart.reduce(function(t, i) { return t + (i.price * i.quantity); }, 0);
+    var subtotalEl = document.querySelector('#subtotal');
+    var totalEl = document.querySelector('#total');
+    if (subtotalEl) subtotalEl.textContent = 'UGX ' + subtotal.toLocaleString();
+    if (totalEl) totalEl.textContent = 'UGX ' + subtotal.toLocaleString();
+}
+
+// ========== SEARCH FUNCTIONS ==========
+function doSearch() {
+    var searchInput = document.getElementById('searchInput');
+    var query = searchInput ? searchInput.value.trim() : '';
+    if (query.length >= 2 || query === '') {
+        window.location.href = 'search.html?q=' + encodeURIComponent(query);
+    } else if (query.length > 0 && query.length < 2) {
+        showNotification('Please enter at least 2 characters');
+    }
+}
+
+// ========== MOBILE MENU ==========
+function toggleMobileMenu() {
+    var menu = document.getElementById('mobileMenu');
+    var overlay = document.getElementById('overlay');
+    menu.classList.toggle('open');
+    overlay.classList.toggle('show');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+function closeMobileMenu() {
+    var menu = document.getElementById('mobileMenu');
+    var overlay = document.getElementById('overlay');
+    if (menu) menu.classList.remove('open');
+    if (overlay) overlay.classList.remove('show');
+    document.body.style.overflow = '';
+}
+
+// ========== NOTIFICATION ==========
+function showNotification(message) {
+    var notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    setTimeout(function() { notification.classList.add('show'); }, 10);
+    setTimeout(function() {
+        notification.classList.remove('show');
+        setTimeout(function() { if(notification.parentNode) notification.parentNode.removeChild(notification); }, 300);
+    }, 2500);
+}
+
+// ========== SHUFFLE & DISCOUNT ==========
+function shuffleArray(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+    }
+    return arr;
+}
+
+function calculateDiscount(price, originalPrice) {
+    if (!originalPrice || originalPrice <= price) return 0;
+    return Math.round(((originalPrice - price) / originalPrice) * 100);
+}
+
+// ========== FAB SETUP ==========
+function setupFAB() {
+    var container = document.querySelector('.fab-container');
+    if (!container) return;
+    var fabCart = document.querySelector('.fab-cart');
+    var fabWhatsapp = document.querySelector('.fab-whatsapp');
+    var fabCall = document.querySelector('.fab-call');
+    var fabClose = document.querySelector('.fab-cart-close');
+    if (fabCart) fabCart.addEventListener('click', function() { container.classList.toggle('cart-active'); updateFabCart(); });
+    if (fabWhatsapp) fabWhatsapp.addEventListener('click', function() { window.open('https://wa.me/256758647456', '_blank'); });
+    if (fabCall) fabCall.addEventListener('click', function() { window.location.href = 'tel:+256758647456'; });
+    if (fabClose) fabClose.addEventListener('click', function() { container.classList.remove('cart-active'); });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.fab-cart-container') && !e.target.closest('.fab-cart') && container.classList.contains('cart-active')) {
+            container.classList.remove('cart-active');
+        }
+    });
+}
+
+function updateFabCart() {
+    var cart = getCart();
+    var itemsContainer = document.querySelector('.fab-cart-items');
+    var totalSpan = document.querySelector('#fab-cart-total');
+    if (!itemsContainer) return;
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = '<div class="empty-fab-cart" style="padding: 20px; text-align: center; color: #999;">Your cart is empty</div>';
+        if (totalSpan) totalSpan.textContent = 'UGX 0';
+        return;
+    }
+    var html = '', total = 0;
+    cart.forEach(function(item) {
+        total += item.price * item.quantity;
+        html += '<div class="fab-cart-item"><div class="fab-cart-item-image"><img src="images/' + item.image + '" alt="' + item.name + '" onerror="this.src=\'https://placehold.co/50x50/e31e24/white?text=' + encodeURIComponent(item.name.charAt(0)) + '\'"></div><div class="fab-cart-item-details" style="flex:1;"><div class="fab-cart-item-name">' + item.name + '</div><div class="fab-cart-item-price">' + item.quantity + ' x UGX ' + item.price.toLocaleString() + '</div></div></div>';
+    });
+    itemsContainer.innerHTML = html;
+    if (totalSpan) totalSpan.textContent = 'UGX ' + total.toLocaleString();
+}
+
+function proceedToCheckout() {
+    var cart = getCart();
+    if (cart.length === 0) { showNotification('Your cart is empty!'); return; }
+    var message = 'Hello Top-Notch Mattresses! I would like to order:\n\n';
+    cart.forEach(function(item) { message += '- ' + item.name + ' (' + item.quantity + ' x UGX ' + item.price.toLocaleString() + ')\n'; });
+    var subtotal = cart.reduce(function(t, i) { return t + (i.price * i.quantity); }, 0);
+    message += '\nSubtotal: UGX ' + subtotal.toLocaleString() + '\n\nThank you!';
+    sessionStorage.removeItem(SESSION_CART_KEY);
+    updateCartCount();
+    showNotification('Order placed! Redirecting to WhatsApp...');
+    setTimeout(function() { window.open('https://wa.me/256758647456?text=' + encodeURIComponent(message), '_blank'); }, 1000);
+}
+
+// ========== RENDER PRODUCT GRID ==========
+function renderProductGrid() {
+    var container = document.getElementById('productGridContainer');
+    if (!container) return;
+    container.innerHTML = products.map(function(p) {
+        var defaultSize = p.sizes.find(function(s) { return s.selected; }) || p.sizes[0];
+        var hasOriginal = defaultSize.original && defaultSize.original > defaultSize.price;
+        var original = hasOriginal ? defaultSize.original : null;
+        var pct = original ? Math.round((1 - defaultSize.price / original) * 100) : 0;
+
+        var sizeBtns = p.sizes.map(function(s) {
+            var isSelected = s.selected ? ' selected' : '';
+            return '<button class="size-btn-sm' + isSelected + '" data-size="' + s.size + '" data-price="' + s.price + '" data-original="' + (s.original || '') + '">' + s.size + '</button>';
+        }).join('');
+
+        return '<div class="product-card-grid" data-id="' + p.id + '">' +
+            '<div class="product-image-wrap"><img src="images/' + p.images[0] + '" alt="' + p.name + '" onerror="this.src=\'https://placehold.co/920x1124/e31e24/white?text=' + encodeURIComponent(p.name) + '\'"></div>' +
+            '<div class="product-title">' + p.name + '</div>' +
+            '<div class="price-row">' +
+                '<span class="price-current" data-current>' + formatUGX(defaultSize.price) + '</span>' +
+                (original ? '<span class="price-original" data-original>' + formatUGX(original) + '</span>' : '') +
+                (original ? '<span class="discount-tag">' + pct + '% OFF</span>' : '') +
+            '</div>' +
+            '<div class="size-selector-wrap"><label>Size</label><div class="size-grid-sm">' + sizeBtns + '</div></div>' +
+            '<div class="qty-row"><label>Qty:</label><div class="qty-control"><button class="decrease">-</button><input type="number" class="quantity-input" value="1" min="1"><button class="increase">+</button></div></div>' +
+            '<div class="card-actions-row"><button class="card-add-btn" data-action="cardAdd"><i class="fas fa-shopping-cart"></i> Add to Cart</button></div>' +
+        '</div>';
+    }).join('');
+}
+
+function formatUGX(amount) { return 'UGX ' + Math.round(amount).toLocaleString('en-US'); }
+
+// ========== DOM READY ==========
+document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburgerBtn');
+    var closeBtn = document.getElementById('closeMobileBtn');
+    if (hamburger) hamburger.addEventListener('click', toggleMobileMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMobileMenu);
+    document.getElementById('overlay')?.addEventListener('click', closeMobileMenu);
+    
+    renderProductGrid();
+    setupFAB();
+    updateCartCount();
+    
+    // Global add to cart
+    document.getElementById('globalAddToCart').addEventListener('click', function() {
+        var cards = document.querySelectorAll('.product-card-grid');
+        var added = 0;
+        cards.forEach(function(card) {
+            var id = parseInt(card.dataset.id, 10);
+            var selected = card.querySelector('.size-btn-sm.selected');
+            if (!selected) return;
+            var qtyInput = card.querySelector('.quantity-input');
+            var qty = parseInt(qtyInput ? qtyInput.value : '1', 10);
+            if (isNaN(qty) || qty < 1) qty = 1;
+            addToCart(id, qty);
+            added += qty;
+        });
+        if (added > 0) showNotification('Added ' + added + ' item(s) to cart!');
+    });
+
+    // Global WhatsApp buy
+    document.getElementById('globalWhatsappBuy').addEventListener('click', function() {
+        var cards = document.querySelectorAll('.product-card-grid');
+        var items = [];
+        cards.forEach(function(card) {
+            var id = parseInt(card.dataset.id, 10);
+            var product = products.find(function(p) { return p.id == id; });
+            if (!product) return;
+            var selected = card.querySelector('.size-btn-sm.selected');
+            if (!selected) return;
+            var size = selected.dataset.size;
+            var price = parseInt(selected.dataset.price, 10);
+            var qtyInput = card.querySelector('.quantity-input');
+            var qty = parseInt(qtyInput ? qtyInput.value : '1', 10);
+            if (isNaN(qty) || qty < 1) qty = 1;
+            items.push({ name: product.name + ' (' + size + ')', price: price, qty: qty });
+        });
+        if (items.length === 0) { showNotification('No products selected.'); return; }
+        var message = 'Hello Top-Notch Mattresses! I would like to order:\n\n';
+        var total = 0;
+        items.forEach(function(item) {
+            var lineTotal = item.price * item.qty;
+            total += lineTotal;
+            message += '- ' + item.name + ' x ' + item.qty + ' = UGX ' + lineTotal.toLocaleString() + '\n';
+        });
+        message += '\nTotal: UGX ' + total.toLocaleString() + '\n\nThank you!';
+        window.open('https://wa.me/256758647456?text=' + encodeURIComponent(message), '_blank');
+    });
+
+    // Per-card interactions (delegated)
+    document.getElementById('productGridContainer').addEventListener('click', function(e) {
+        var card = e.target.closest('.product-card-grid');
+        if (!card) return;
+
+        // Size selection
+        var sizeBtn = e.target.closest('.size-btn-sm');
+        if (sizeBtn) {
+            var wrap = sizeBtn.closest('.size-grid-sm');
+            if (wrap) {
+                wrap.querySelectorAll('.size-btn-sm').forEach(function(b) { b.classList.remove('selected'); });
+                sizeBtn.classList.add('selected');
+                var price = parseInt(sizeBtn.dataset.price, 10);
+                var originalVal = sizeBtn.dataset.original;
+                var original = originalVal ? parseInt(originalVal, 10) : null;
+                var pct = original ? Math.round((1 - price / original) * 100) : 0;
+                var priceRow = card.querySelector('.price-row');
+                priceRow.querySelector('.price-current').textContent = formatUGX(price);
+                var origSpan = priceRow.querySelector('.price-original');
+                var discountTag = priceRow.querySelector('.discount-tag');
+                if (original && origSpan) {
+                    origSpan.textContent = formatUGX(original);
+                    origSpan.style.display = 'inline';
+                    if (discountTag) { discountTag.textContent = pct + '% OFF'; discountTag.style.display = 'inline'; }
+                } else {
+                    if (origSpan) origSpan.style.display = 'none';
+                    if (discountTag) discountTag.style.display = 'none';
+                }
+            }
+            return;
+        }
+
+        // Quantity stepper
+        var qtyInput = card.querySelector('.quantity-input');
+        if (e.target.closest('.decrease')) {
+            qtyInput.value = Math.max(1, parseInt(qtyInput.value || '1', 10) - 1);
+            return;
+        }
+        if (e.target.closest('.increase')) {
+            qtyInput.value = Math.max(1, parseInt(qtyInput.value || '1', 10) + 1);
+            return;
+        }
+
+        // Per-card add to cart
+        if (e.target.closest('.card-add-btn')) {
+            var id = parseInt(card.dataset.id, 10);
+            var selected = card.querySelector('.size-btn-sm.selected');
+            if (!selected) { showNotification('Please select a size.'); return; }
+            var qty = parseInt(qtyInput ? qtyInput.value : '1', 10);
+            if (isNaN(qty) || qty < 1) qty = 1;
+            addToCart(id, qty);
+            showNotification('Added to cart!');
+            return;
+        }
+    });
+
+    // Quantity input change
+    document.getElementById('productGridContainer').addEventListener('change', function(e) {
+        if (!e.target.classList.contains('quantity-input')) return;
+        var val = parseInt(e.target.value || '1', 10);
+        if (isNaN(val) || val < 1) val = 1;
+        e.target.value = val;
+    });
+
+    // FAB checkout
+    document.getElementById('fabCheckoutWhatsapp').addEventListener('click', function() {
+        proceedToCheckout();
+    });
+});
+
+// Export for global use
+window.addToCart = addToCart;
+window.updateCartCount = updateCartCount;
+window.showNotification = showNotification;
+window.doSearch = doSearch;
+window.proceedToCheckout = proceedToCheckout;
+</script>
+</body>
+</html>
